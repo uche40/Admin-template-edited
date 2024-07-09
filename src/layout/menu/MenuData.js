@@ -3,47 +3,47 @@ const menu = [
     heading: "Quick Links",
   },
   {
-    icon: "account-setting",
-    text: "My Account",
-    link: "/clientarea",
+    icon: "dashboard",
+    text: "Billing Dashboard",
+    link: "/view?page=/account/clientarea.php",
     dashboard: true,
   },
   {
-    icon: "dashboard",
-    text: "My Applications",
-    link: "/",
+    icon: "account-setting",
+    text: "Register Account",
+    badge: "Free",
+    link: "/view?page=/account/register.php",
     dashboard: true,
   },
   {
     icon: "template",
-    text: "Browse Marketplace",
-    link: "/sales",
+    text: "Discover Products",
+    link: "/view?page=/cms/products/",
     dashboard: true,
   },
   {
     icon: "cc-new",
-    text: "How it Works",
-    link: "/invest",
+    text: "Make Payment",
+    link: "/view?page=/account/clientarea.php?action=invoices",
     dashboard: true,
   },
   {
-    heading: "Application Marketplace ",
+    heading: "Products ",
   },
   {
     icon: "reports-alt",
-    text: "Featured Applications",
+    text: "All Products",
     link: "/invest",
-    badge: "New",
     dashboard: true,
   },
   {
-    icon: "growth",
-    text: "Business Websites",
+    icon: "sun",
+    text: "Website Creation",
     active: false,
     subMenu: [
       {
-        text: "E-commerce",
-        link: "/project-card",
+        text: "SiteHub ",
+        link: "/view?page=/cms/sitehub/",
       },
       {
         text: "Corporate Websites",
@@ -65,7 +65,7 @@ const menu = [
   },
   {
     icon: "color-palette",
-    text: "Design and Graphics",
+    text: "Image Creation",
     active: false,
     subMenu: [
       {
@@ -92,7 +92,8 @@ const menu = [
   },
   {
     icon: "play-circle",
-    text: "Video & Animation",
+    text: "Video Creation",
+    badge: "New",
     active: false,
     subMenu: [
       {
@@ -114,8 +115,8 @@ const menu = [
     ],
   },
   {
-    icon: "mic",
-    text: "Music and Audio",
+    icon: "clock",
+    text: "Business Software",
     active: false,
     subMenu: [
       {
@@ -145,32 +146,32 @@ const menu = [
     subMenu: [
       {
         text: "Account Dashboard",
-        link: "/clientarea",
-        icon: "user-alt",
+        link: "/view?page=/account/clientarea.php",
+        icon: "meter",
         theme: "bg-purple-dim",
       },
       {
         text: "Manage Billing",
-        link: "/app-chat",
-        icon: "wallet-saving",
+        link: "/view?page=/account/clientarea.php?action=invoices",
+        icon: "wallet saving",
         theme: "bg-orange-dim",
       },
       {
-        text: "Manage Orders",
-        link: "/app-inbox",
-        icon: "invest",
+        text: "Manage My Products",
+        link: "/view?page=/account/clientarea.php?action=services",
+        icon: "swap-alt",
         theme: "bg-primary-dim",
       },
       {
         text: "Affiliate Partners",
-        link: "/app-calender",
+        link: "/view?page=/account/affiliates.php",
         icon: "briefcase",
         theme: "bg-success-dim",
       },
       {
         text: "Contacts and Users", 
-        link: "/app-kanban",
-        icon: "user-list-fill",
+        link: "/view?page=/account/clientarea.php?action=services",
+        icon: "user-list",
         theme: "bg-info-dim",
       },
    
@@ -203,51 +204,15 @@ const menu = [
       },
     ],
   },
-  {
-    icon: "clock",
-    text: "Business Productivity",
-    active: false,
-    subMenu: [
-      {
-        text: "Project Management",
-        link: "/invoice-list",
-      },
-      {
-        text: "Collaboration Tools",
-        link: "/invoice-list",
-      },
-      {
-        text: "Time Tracking Software",
-        link: "/invoice-list",
-      },
-      {
-        text: "CRM Software",
-        link: "/invoice-list",
-      },
-      {
-        text: "Accounting and Finance",
-        link: "/invoice-details/1",
-      },
-    ],
-  },
-  {
-    icon: "link-group",
-    text: "Digital Marketing",
-    link: "/pricing-table",
-  },
-  {
-    icon: "cpu",
-    text: "AI and Automation",
-    link: "/image-gallery",
-    badge: "Trending",
-  },
+  
+  
   {
     heading: "Manage Account",
   },
   {
     icon: "user-alt",
     text: "Account Dashboard",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
@@ -258,27 +223,27 @@ const menu = [
     subMenu: [
       {
         text: "My Invoices",
-        link: "/auth-login",
+        link: "/view?page=/account/clientarea.php?action=services",
         
       },
       {
         text: "My Orders",
-        link: "/auth-register",
+        link: "/view?page=/account/clientarea.php?action=services",
         
       },
       {
         text: "My Quotes",
-        link: "/auth-reset",
+        link: "/view?page=/account/clientarea.php?action=services",
         
       },
       {
         text: "Mass Payment",
-        link: "/auth-success",
+        link: "/view?page=/account/clientarea.php?action=services",
         
       },
       {
         text: "Add Funds",
-        link: "/auth-success",
+        link: "/view?page=/account/clientarea.php?action=services",
         
       },
     ],
@@ -296,27 +261,27 @@ const menu = [
     subMenu: [
       {
         text: "Partner Dashboard",
-        link: "/_blank",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
       {
         text: "My Commissions",
-        link: "/pages/faq",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
       {
         text: "My Payouts",
-        link: "/pages/terms-policy",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
       {
         text: "Link Generator",
-        link: "/pages/regular-v1",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
       {
         text: "How it Works",
-        link: "/pages/regular-v2?pagelink=appstore/product/borderlands-3/",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
       {
         text: "Client Area",
-        link: "/clientarea?pagelink=cms/browsesitehub/browse-websites/",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
 
     ],
@@ -328,7 +293,7 @@ const menu = [
     subMenu: [
       {
         text: "Manage Users",
-        link: "/svg-icons",
+        link: "/view?page=/account/clientarea.php?action=services",
       },
       {
         text: "Manage Contacts",
@@ -343,13 +308,14 @@ const menu = [
   {
     icon: "question",
     text: "Open Support Ticket",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
   {
     icon: "inbox-in",
     text: "My Support Tickets",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
@@ -357,47 +323,47 @@ const menu = [
   {
     icon: "play-circle",
     text: "Video Tutorials",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
   {
     icon: "info",
     text: "Knowledgebase",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
   {
     icon: "calendar-alt",
     text: "Announcements",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
   {
     icon: "live",
     text: "Network Status",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: false,
     
   },
   {
     icon: "file-docs",
     text: "Terms of Service",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     
   },
   {
     icon: "eye",
     text: "Privacy Policy",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     
   },
   {
     icon: "focus",
     text: "Cookie Policy",
-    link: "/email-template",
+    link: "/view?page=/account/clientarea.php?action=services",
     active: "false",
   },
   

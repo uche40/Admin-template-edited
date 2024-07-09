@@ -1,6 +1,6 @@
 {
-"name": "mypancho-cloud-hosting-platform",
-  "homepage": "https://mypancho.com/cloud/",
+"name": "mypancho-business-cloud-platform",
+  "homepage": "https://mypancho.com/dashboard/",
   "version": "1.7.1",
   "private": true,
   "dependencies": {
