@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { Button, Icon, Block } from "../../../components/Component";
-import Content from "../../../layout/content/Content";
-import Head from "../../../layout/head/Head";
-import LogoDark from "../../../images/logo-dark2x.png";
-import { invoiceData } from "./Invoice";
+import { Button, Icon, Block } from "../components/Component";
+import Content from "../layout/content/Content";
+import Head from "../layout/head/Head";
+import LogoDark from "../images/logo-dark2x.png";
+import { invoiceData } from "./pre-built/invoice/Invoice";
 
-const NoHeaderFooterPage = () => {
+const SidebarNoHeaderNoFooterTemplate = () => {
   // State Management
   const [data] = useState(invoiceData);
   const [user, setUser] = useState();
@@ -23,10 +23,10 @@ const NoHeaderFooterPage = () => {
       return params.get(name);
     };
 
-    const pageLink = getUrlParameter('pagelink');
+    const view = getUrlParameter('view');
 
-    if (pageLink) {
-      setIframeSrc(`https://mypancho.com/${pageLink}`);
+    if (view) {
+      setIframeSrc(`https://mypancho.com/${view}`);
     } else {
       setIframeSrc('https://mypancho.com/cms'); // Default URL if no pagelink provided
     }
@@ -48,7 +48,7 @@ const NoHeaderFooterPage = () => {
   // Render
   return (
     <div className="bg-white">
-      <Head title="Invoice Print"></Head>
+      <Head title="Mypancho.com"></Head>
       {user && (
         <Content>
           <div style={{ height: 'calc(100vh - 0px)', overflow: 'hidden' }}>
@@ -72,4 +72,4 @@ const NoHeaderFooterPage = () => {
   );
 };
 
-export default NoHeaderFooterPage;
+export default SidebarNoHeaderNoFooterTemplate;

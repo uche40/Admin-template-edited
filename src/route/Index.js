@@ -122,11 +122,12 @@ import Success from "../pages/auth/Success";
 import Layout from "../layout/Index";
 import LayoutApp from "../layout/Index-app";
 import Clientarea from "../pages/Clientarea";
-import Nosubsidebar from "../pages/Nosubsidebar";
 import LayoutWithoutFooterHeader from "../layout/LayoutWithoutFooterHeader";
-import NoHeaderNoFooter from "../pages/NoHeaderNoFooter";
+import NoHeaderNoSidebarNoFooterTemplate from "../pages/NoHeaderNoSidebarNoFooterTemplate";
 import NoHeaderNoFooterWithSidebar from "../layout/NoHeaderNoFooterWithSidebar";
 import NoHeaderFooterPage from "../pages/pre-built/invoice/NoHeaderFooterPage";
+import SidebarNoHeaderNoFooterTemplate from "../pages/SidebarNoHeaderNoFooterTemplate";
+import NosubsidebarNourlVariableButWithHeader from "../pages/NosubsidebarNourlVariableButWithHeader";
 
 const Pages = () => {
   const location = useLocation();
@@ -266,28 +267,45 @@ const Pages = () => {
           <Route path="app-messages" element={<AppMessages />}></Route>
         </Route>
 
-        {/* THESE ARE FOR PAGES THAT USE THE NO SUBMENU SIDE BAR. JUST NEED TO COPY A LINE 
+        {/* THESE ARE FOR PAGES THAT USE THE NO SUBMENU SIDE BAR BUT STILL HAVE A HEADER. JUST NEED TO DUPLICATE A LINE 
         AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN UPPER CASE I'LL LET VSCODE AUTO INSERT THE CORRESPONDING IMPORT LINE ABOVE, 
         THEN I CAN ADD THE ACTUAL link in the src/layout/menu/MenuData file menu-data file */}
 
         <Route element={<LayoutApp app={{ icon: "chat", theme: "bg-purple-dim", text: "Messages" }} />}>
           <Route path="invoice-print/:invoiceId" element={<InvoicePrint />}></Route>
 
-          <Route path="Nosubsidebar" element={<Nosubsidebar />}>
+          <Route path="NosubsidebarNourlVariableButWithHeader" element={<NosubsidebarNourlVariableButWithHeader />}>
             {" "}
           </Route>
         </Route>
 
-        {/* THESE ARE FOR PAGES THAT USE THE NO HEADER AND FOOTER. JUST NEED TO COPY A LINE 
+
+
+
+
+
+
+        {/* THESE ARE FOR PAGES THAT USE THE NO HEADER NO SIDEBAR AND NO FOOTER LAYOUT. JUST NEED TO DUPLICATE A LINE 
         AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN UPPER CASE I'LL LET VSCODE AUTO INSERT THE CORRESPONDING IMPORT LINE ABOVE, 
         THEN I CAN ADD THE ACTUAL link in the src/layout/menu/MenuData file menu-data file */}
 
         <Route element={<LayoutWithoutFooterHeader app={{ icon: "chat", theme: "bg-purple-dim", text: "Messages" }} />}>
           <Route path="noheader" element={<InvoicePrint />}></Route>
 
-          <Route path="NoHeaderNoFooter" element={<NoHeaderNoFooter />}></Route>
+          <Route path="NoHeaderNoSidebarNoFooterTemplate" element={<NoHeaderNoSidebarNoFooterTemplate />}></Route>
         </Route>
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         {/* /*------------------------------------------------------------------------------------------------ */}
         {/* No header no footer with sidebars */}
    
@@ -318,14 +336,11 @@ const Pages = () => {
             <Route path="settings" element={<FileManagerSettings />}></Route>
           </Route>
         </Route>
-{/* {NoHeaderNoFooterWithSidebar} */}
-      <Route
-          element={<NoHeaderNoFooterWithSidebar app={{ icon: "chat", theme: "bg-purple-dim", text: "Messages" }} />}
-        >
-          <Route path="noheaderwithside" element={<NoHeaderFooterPage />}></Route>
-        </Route>
-      </Route>
-      <Route path={`${process.env.PUBLIC_URL}`} element={<LayoutApp />}>
+
+
+
+
+        <Route path={`${process.env.PUBLIC_URL}`} element={<LayoutApp />}>
         <Route path="auth-success" element={<Success />}></Route>
         <Route path="auth-reset" element={<ForgotPassword />}></Route>
         <Route path="auth-register" element={<Register />}></Route>
@@ -340,7 +355,29 @@ const Pages = () => {
       
         <Route path="*" element={<Error404Modern />}></Route>
       </Route>
-    </Routes>
+   
+
+{/*/* THESE ARE FOR PAGES THAT USE THE FULL MENU BAR BUT WITH THE HEADER AND FOOTER REMOVED AND TITLE MOVED FROM HEADER INTO THE TOP OF THE SIDEBAR . 
+JUST NEED TO COPY A LINE AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN UPPER CASE I'LL LET VSCODE AUTO INSERT THE CORRESPONDING IMPORT LINE ABOVE, 
+        THEN I CAN ADD THE ACTUAL link in the src/layout/menu/MenuData file   */}
+
+
+      <Route
+          element={<NoHeaderNoFooterWithSidebar app={{ icon: "chat", theme: "bg-purple-dim", text: "Messages" }} />}
+        >
+          <Route path="noheaderwithside" element={<NoHeaderFooterPage />}></Route>
+          <Route path="SidebarNoHeaderNoFooterTemplate" element={<SidebarNoHeaderNoFooterTemplate />}></Route>
+        </Route>
+      </Route>
+
+
+
+{/*/* ------------------------------------------------------------------------------------------------  */}
+
+  </Routes>
+
+
+
   );
 };
 export default Pages;

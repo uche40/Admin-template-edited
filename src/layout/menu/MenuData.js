@@ -316,7 +316,7 @@ const menu = [
       },
       {
         text: "Client Area",
-        link: "/clientarea?pagelink=appstore/product/everdream-valley/",
+        link: "/clientarea?pagelink=cms/browsesitehub/browse-websites/",
       },
 
     ],
