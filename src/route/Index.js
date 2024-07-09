@@ -353,13 +353,13 @@ const Pages = () => {
         <Route path="auth-login" element={<Login />}></Route>
    
         <Route path="errors">
-          <Route path="404-modern" element={<Error404Modern />}></Route>
+          
           <Route path="404-classic" element={<Error404Classic />}></Route>
           <Route path="504-modern" element={<Error504Modern />}></Route>
           <Route path="504-classic" element={<Error504Classic />}></Route>
         </Route>
       
-        <Route path="*" element={<Error404Modern />}></Route>
+        
       </Route>
    
 
@@ -376,6 +376,10 @@ JUST NEED TO COPY A LINE AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN
           <Route path="SidebarNoHeaderNoFooterTemplate" element={<SidebarNoHeaderNoFooterTemplate />}></Route>
 
           <Route path="View" element={<View />}></Route>
+
+          <Route path="404-modern" element={<Error404Modern />}></Route>
+          
+          <Route path="*" element={<Error404Modern />}></Route>
 
           <Route index element={<Homepage />}></Route>
 

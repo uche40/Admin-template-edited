@@ -10,20 +10,20 @@ const menu = [
   },
   {
     icon: "account-setting",
-    text: "Register Account",
+    text: "Register An Account",
     badge: "Free",
     link: "/view?page=/account/register.php",
     dashboard: true,
   },
   {
     icon: "template",
-    text: "Discover Products",
+    text: "Discover Our Products",
     link: "/view?page=/cms/products/",
     dashboard: true,
   },
   {
     icon: "cc-new",
-    text: "Make Payment",
+    text: "Make A Payment",
     link: "/view?page=/account/clientarea.php?action=invoices",
     dashboard: true,
   },
