@@ -128,6 +128,12 @@ import NoHeaderNoFooterWithSidebar from "../layout/NoHeaderNoFooterWithSidebar";
 import NoHeaderFooterPage from "../pages/pre-built/invoice/NoHeaderFooterPage";
 import SidebarNoHeaderNoFooterTemplate from "../pages/SidebarNoHeaderNoFooterTemplate";
 import NosubsidebarNourlVariableButWithHeader from "../pages/NosubsidebarNourlVariableButWithHeader";
+import Open from "../pages/Open";
+import View from "../pages/View";
+
+
+
+
 
 const Pages = () => {
   const location = useLocation();
@@ -142,7 +148,7 @@ const Pages = () => {
   return (
     <Routes>
       <Route path={`${process.env.PUBLIC_URL}`} element={<Layout />}>
-        <Route index element={<Homepage />}></Route>
+        
         <Route path="crypto" element={<Crypto />}></Route>
         <Route path="sales" element={<Sales />}></Route>
         <Route path="invest" element={<Invest />}></Route>
@@ -290,9 +296,13 @@ const Pages = () => {
         THEN I CAN ADD THE ACTUAL link in the src/layout/menu/MenuData file menu-data file */}
 
         <Route element={<LayoutWithoutFooterHeader app={{ icon: "chat", theme: "bg-purple-dim", text: "Messages" }} />}>
+          
           <Route path="noheader" element={<InvoicePrint />}></Route>
-
+         
           <Route path="NoHeaderNoSidebarNoFooterTemplate" element={<NoHeaderNoSidebarNoFooterTemplate />}></Route>
+
+          <Route path="Open" element={<Open />}></Route>
+
         </Route>
 
         
@@ -303,14 +313,10 @@ const Pages = () => {
         
         
         
-        
-        
-        
-        {/* /*------------------------------------------------------------------------------------------------ */}
-        {/* No header no footer with sidebars */}
-   
+                     
+       
 
-        {/* THESE ARE FOR PAGES THAT USE THE STANDARD THEME TEMPLATE MENU. JUST NEED TO COPY A LINE 
+        {/* THESE ARE FOR PAGES THAT USE THE STANDARD THEME TEMPLATE MENU. JUST NEED TO DUPLICATE A LINE 
         AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN UPPER CASE I'LL LET VSCODE AUTO INSERT THE CORRESPONDING IMPORT LINE ABOVE, 
         THEN I CAN ADD THE ACTUAL link in the src/layout/menu/MenuData file menu-data file */}
 
@@ -366,7 +372,13 @@ JUST NEED TO COPY A LINE AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN
           element={<NoHeaderNoFooterWithSidebar app={{ icon: "chat", theme: "bg-purple-dim", text: "Messages" }} />}
         >
           <Route path="noheaderwithside" element={<NoHeaderFooterPage />}></Route>
+
           <Route path="SidebarNoHeaderNoFooterTemplate" element={<SidebarNoHeaderNoFooterTemplate />}></Route>
+
+          <Route path="View" element={<View />}></Route>
+
+          <Route index element={<Homepage />}></Route>
+
         </Route>
       </Route>
 

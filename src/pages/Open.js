@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Head from "../layout/head/Head";
 import Content from "../layout/content/Content";
 
-const NoHeaderNoSidebarNoFooterTemplate = () => {
+const Open = () => {
   // State Management
   const [iframeSrc, setIframeSrc] = useState('');
 
@@ -69,4 +69,4 @@ const NoHeaderNoSidebarNoFooterTemplate = () => {
   );
 };
 
-export default NoHeaderNoSidebarNoFooterTemplate;
+export default Open;

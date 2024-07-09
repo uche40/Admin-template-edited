@@ -23,10 +23,10 @@ const SidebarNoHeaderNoFooterTemplate = () => {
       return params.get(name);
     };
 
-    const view = getUrlParameter('view');
+    const page = getUrlParameter('page');
 
-    if (view) {
-      setIframeSrc(`https://mypancho.com/${view}`);
+    if (page) {
+      setIframeSrc(`https://mypancho.com/${page}`);
     } else {
       setIframeSrc('https://mypancho.com/cms'); // Default URL if no pagelink provided
     }
