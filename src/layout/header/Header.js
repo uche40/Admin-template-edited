@@ -40,7 +40,7 @@ const Header = ({ fixed, className ,style}) => {
             </div>
             <div className="nk-header-app-info">
               <span className="sub-text">Mypancho.com</span>
-              <span className="lead-text">Application Hosting Platform</span>
+              <span className="lead-text">Website Creation Platform</span>
             </div>
           </div>
           <div className="nk-header-menu is-light">

@@ -18,11 +18,16 @@ const Open = () => {
     };
 
     const page = getUrlParameter('page');
+    const web = getUrlParameter('web');
 
-    if (page) {
+    if (page && web) {
+      setIframeSrc(`https://${web}.mypancho.com/${page}`);
+    } else if (page) {
       setIframeSrc(`https://mypancho.com/${page}`);
+    } else if (web) {
+      setIframeSrc(`https://${web}.mypancho.com/`);
     } else {
-      setIframeSrc('https://mypancho.com/cms'); // Default URL if no page provided
+      setIframeSrc('https://cms.mypancho.com/'); // Default URL if no parameters provided
     }
   }, [location]);
 

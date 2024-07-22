@@ -3,141 +3,72 @@ const menu = [
     heading: "Quick Links",
   },
   {
+    icon: "template",
+    text: "My Websites",
+    link: "/open?web=builder&page=/",
+    dashboard: true,
+  },
+
+  {
+    icon: "cc-new",
+    text: "Browse Websites",
+    link: "/online?web=cms&page=/websites/",
+    dashboard: true,
+  },
+
+  {
     icon: "dashboard",
     text: "Billing Dashboard",
-    link: "/view?page=/account/clientarea.php",
+    link: "/online?page=/account/clientarea.php",
+    badge: "Updated",
     dashboard: true,
   },
   {
     icon: "account-setting",
-    text: "Register An Account",
-    badge: "Free",
+    text: "Book Expert Consultation",
     link: "/view?page=/account/register.php",
     dashboard: true,
   },
+
+
   {
-    icon: "template",
-    text: "Discover Our Products",
-    link: "/view?page=/cms/products/",
-    dashboard: true,
-  },
-  {
-    icon: "cc-new",
-    text: "Make A Payment",
-    link: "/view?page=/account/clientarea.php?action=invoices",
-    dashboard: true,
-  },
-  {
-    heading: "Products ",
+    heading: "Prebuilt Websites ",
   },
   {
     icon: "reports-alt",
-    text: "All Products",
+    text: "All Websites",
     link: "/invest",
-    dashboard: true,
+    link: "/web?page=/websites/",
   },
   {
     icon: "sun",
-    text: "Website Creation",
+    text: "Professional Services",
     active: false,
-    subMenu: [
-      {
-        text: "SiteHub ",
-        link: "/view?page=/cms/sitehub/",
-      },
-      {
-        text: "Corporate Websites",
-        link: "/project-list",
-      },
-      {
-        text: "Blogs and Personal Sites",
-        link: "/project-list",
-      },
-      {
-        text: "Landing Pages",
-        link: "/project-list",
-      },
-      {
-        text: "Website Templates",
-        link: "/project-list",
-      },
-    ],
+    link: "/online?web=cms&page=/websites/website-category/professional-services/",
+    
   },
   {
     icon: "color-palette",
-    text: "Image Creation",
+    text: "Retail & Hospitality",
     active: false,
-    subMenu: [
-      {
-        text: "Graphic Design Tools",
-        link: "/user-list-regular",
-      },
-      {
-        text: "Photo Editing Software",
-        link: "/user-list-compact",
-      },
-      {
-        text: "Infographic Creators",
-        link: "/user-details-regular/1",
-      },
-      {
-        text: "Illustration Tools",
-        link: "/user-profile-regular",
-      },
-      {
-        text: "Graphics Templates",
-        link: "/user-contact-card",
-      },
-    ],
+    badge: "New",
+    link: "/web?page=/websites/website-category/retail-hospitality/",
+    
   },
   {
     icon: "play-circle",
-    text: "Video Creation",
-    badge: "New",
+    text: "Home & Lifestyle",
+    link: "/web?page=/websites/website-category/home-lifestyle/",
     active: false,
-    subMenu: [
-      {
-        text: "Video Editing Software",
-        link: "/kyc-list-regular",
-      },
-      {
-        text: "Animation Software",
-        link: "/kyc-list-regular",
-      },
-      {
-        text: "Motion Graphics",
-        link: "/kyc-list-regular",
-      },
-      {
-        text: "Video Templates",
-        link: "/kyc-details-regular/UD01544",
-      },
-    ],
+    
   },
   {
     icon: "clock",
-    text: "Business Software",
+    text: "Creative & Digital",
     active: false,
-    subMenu: [
-      {
-        text: "Music Production Software",
-        link: "/transaction-basic",
-      },
-      {
-        text: "Audio Editing Tools",
-        link: "/transaction-basic",
-      },
-      {
-        text: "Podcast Tools",
-        link: "/transaction-basic",
-      },
-      {
-        text: "Nosubsidebar",
-        link: "/Nosubsidebar",
-      },
-
-  
-    ],
+    badge: "Trending",
+    link: "/web?page=/websites/website-category/creative-digital/",
+    
   },
   {
     icon: "grid-alt",
@@ -179,31 +110,20 @@ const menu = [
   },
   {
     icon: "code",
-    text: "Development and IT",
+    text: "Specialized Industries",
     active: false,
-    subMenu: [
-      {
-        text: "Web Development Tools",
-        link: "/product-list",
-      },
-      {
-        text: "Database Management",
-        link: "/product-card",
-      },
-      {
-        text: "DevOps Tools",
-        link: "/product-details/0",
-      },
-      {
-        text: "Mobile App Development",
-        link: "/product-details/0",
-      },
-      {
-        text: "Cybersecurity Tools",
-        link: "/product-details/0",
-      },
-    ],
+    link: "/web?page=/websites/website-category/specialized-industries/",
+    
   },
+
+  {
+    icon: "wallet-saving",
+    text: "Online Business Models",
+    active: false,
+    link: "/web?page=/websites/website-category/online-business-models/",
+    
+  },
+  
   
   
   {

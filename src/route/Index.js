@@ -121,15 +121,15 @@ import Success from "../pages/auth/Success";
 
 import Layout from "../layout/Index";
 import LayoutApp from "../layout/Index-app";
-import Clientarea from "../pages/Clientarea";
 import LayoutWithoutFooterHeader from "../layout/LayoutWithoutFooterHeader";
 import NoHeaderNoSidebarNoFooterTemplate from "../pages/NoHeaderNoSidebarNoFooterTemplate";
 import NoHeaderNoFooterWithSidebar from "../layout/NoHeaderNoFooterWithSidebar";
 import NoHeaderFooterPage from "../pages/pre-built/invoice/NoHeaderFooterPage";
 import SidebarNoHeaderNoFooterTemplate from "../pages/SidebarNoHeaderNoFooterTemplate";
 import NosubsidebarNourlVariableButWithHeader from "../pages/NosubsidebarNourlVariableButWithHeader";
+import Online from "../pages/Online";
 import Open from "../pages/Open";
-import View from "../pages/View";
+
 
 
 
@@ -153,7 +153,7 @@ const Pages = () => {
         <Route path="sales" element={<Sales />}></Route>
         <Route path="invest" element={<Invest />}></Route>
         <Route path="_blank" element={<Blank />}></Route>
-        <Route path="clientarea" element={<Clientarea />}></Route>
+       
         <Route element={<LayoutApp />}></Route>
 
         {/*Pre-built Pages*/}
@@ -301,6 +301,7 @@ const Pages = () => {
          
           <Route path="NoHeaderNoSidebarNoFooterTemplate" element={<NoHeaderNoSidebarNoFooterTemplate />}></Route>
 
+         
           <Route path="Open" element={<Open />}></Route>
 
         </Route>
@@ -363,7 +364,7 @@ const Pages = () => {
       </Route>
    
 
-{/*/* THESE ARE FOR PAGES THAT USE THE FULL MENU BAR BUT WITH THE HEADER AND FOOTER REMOVED AND TITLE MOVED FROM HEADER INTO THE TOP OF THE SIDEBAR . 
+{/*/* THESE ARE FOR PAGES THAT USE THE FULL MENU BAR WITH SUBMENU BUT THE HEADER AND FOOTER ARE REMOVED AND TITLE MOVED FROM HEADER INTO THE TOP OF THE SIDEBAR . 
 JUST NEED TO COPY A LINE AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN UPPER CASE I'LL LET VSCODE AUTO INSERT THE CORRESPONDING IMPORT LINE ABOVE, 
         THEN I CAN ADD THE ACTUAL link in the src/layout/menu/MenuData file   */}
 
@@ -375,8 +376,11 @@ JUST NEED TO COPY A LINE AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN
 
           <Route path="SidebarNoHeaderNoFooterTemplate" element={<SidebarNoHeaderNoFooterTemplate />}></Route>
 
-          <Route path="View" element={<View />}></Route>
+          <Route path= "online" element={<Online />}></Route>
 
+          
+
+          
           <Route path="404-modern" element={<Error404Modern />}></Route>
           
           <Route path="*" element={<Error404Modern />}></Route>

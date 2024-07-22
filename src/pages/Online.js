@@ -6,7 +6,7 @@ import Head from "../layout/head/Head";
 import LogoDark from "../images/logo-dark2x.png";
 import { invoiceData } from "./pre-built/invoice/Invoice";
 
-const View = () => {
+const Online = () => {
   // State Management
   const [data] = useState(invoiceData);
   const [user, setUser] = useState();
@@ -24,11 +24,16 @@ const View = () => {
     };
 
     const page = getUrlParameter('page');
+    const web = getUrlParameter('web');
 
-    if (page) {
-      setIframeSrc(`https://cms.mypancho.com/`);
+    if (page && web) {
+      setIframeSrc(`https://${web}.mypancho.com/${page}`);
+    } else if (page) {
+      setIframeSrc(`https://mypancho.com/${page}`);
+    } else if (web) {
+      setIframeSrc(`https://${web}.mypancho.com/`);
     } else {
-      setIframeSrc('https://moonlight-films.vercel.app/movie/125509'); // Default URL if no pagelink provided
+      setIframeSrc('https://cms.mypancho.com/'); // Default URL if no parameters provided
     }
   }, [location]);
 
@@ -42,8 +47,6 @@ const View = () => {
       setUser(data[0]);
     }
   }, [invoiceId, data]);
-
-
 
   // Render
   return (
@@ -72,4 +75,4 @@ const View = () => {
   );
 };
 
-export default View;
+export default Online;

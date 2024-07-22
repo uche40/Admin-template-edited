@@ -28,7 +28,7 @@ const SidebarNoHeaderNoFooterTemplate = () => {
     if (page) {
       setIframeSrc(`https://mypancho.com/${page}`);
     } else {
-      setIframeSrc('https://mypancho.com/cms'); // Default URL if no pagelink provided
+      setIframeSrc('https://block.codescandy.com/landing-sass-v1.html'); // Default URL if no pagelink provided
     }
   }, [location]);
 
