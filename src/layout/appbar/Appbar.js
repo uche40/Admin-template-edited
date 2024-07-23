@@ -2,17 +2,19 @@ import React from "react";
 import LogoSmall from "../../images/logo-small.png";
 import LogoDark from "../../images/logo-dark-small.png";
 import SimpleBar from "simplebar-react";
+import Toggle from "../sidebar/Toggle";
 import menu from "../menu/MenuData";
 import classNames from "classnames";
 import { DropdownMenu, DropdownToggle, UncontrolledDropdown } from "reactstrap";
 import { Link } from "react-router-dom";
 import { UserAvatar, LinkList, LinkItem, Icon, TooltipComponent } from "../../components/Component";
 
-import { useTheme } from '../provider/Theme';
+import { useTheme, useThemeUpdate } from "../provider/Theme";
 
 const Appbar = () => {
 
   const theme = useTheme();
+  const themeUpdate = useThemeUpdate();
 
   let currentUrl;
 
@@ -34,6 +36,9 @@ const Appbar = () => {
         <Link to={`${process.env.PUBLIC_URL}/`} className="logo-link">
           <img className="logo-light logo-img" src={LogoSmall} alt="logo" />
           <img className="logo-dark logo-img" src={LogoDark} alt="logo-dark" />
+        </Link>
+        <Link className="nk-menu-trigger d-xl-none ms-n1 logo-link">
+          <Toggle className="nk-nav-toggle nk-quick-nav-icon" icon="menu" click={themeUpdate.sidebarVisibility} />
         </Link>
       </div>
       <div className="nk-sidebar-element">

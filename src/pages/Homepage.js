@@ -28,7 +28,7 @@ const View = () => {
     if (page) {
       setIframeSrc(`https://cms.mypancho.com/`);
     } else {
-      setIframeSrc('https://moonlight-films.vercel.app/movie/125509'); // Default URL if no pagelink provided
+      setIframeSrc('https://mypancho.com/cms/index.html'); // Default URL if no pagelink provided
     }
   }, [location]);
 
