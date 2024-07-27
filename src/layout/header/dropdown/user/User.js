@@ -58,7 +58,7 @@ const User = () => {
                   <LinkItem link="/user-profile-activity" icon="activity-alt" onClick={toggle}>
                     Account Security
                   </LinkItem>
-                  <LinkItem link="/user-profile-activity" icon="briefcase" onClick={toggle}>
+                  <LinkItem link="/view?page=/account/affiliates.php" icon="briefcase" onClick={toggle}>
                     Affiliate Details
                   </LinkItem>
                   <LinkItem link="/user-profile-activity" icon="cc-alt" onClick={toggle}>

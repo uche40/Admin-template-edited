@@ -127,8 +127,9 @@ import NoHeaderNoFooterWithSidebar from "../layout/NoHeaderNoFooterWithSidebar";
 import NoHeaderFooterPage from "../pages/pre-built/invoice/NoHeaderFooterPage";
 import SidebarNoHeaderNoFooterTemplate from "../pages/SidebarNoHeaderNoFooterTemplate";
 import NosubsidebarNourlVariableButWithHeader from "../pages/NosubsidebarNourlVariableButWithHeader";
-import Online from "../pages/Online";
+import View from "../pages/View";
 import Open from "../pages/Open";
+import Show from "../pages/Show";
 
 
 
@@ -376,7 +377,9 @@ JUST NEED TO COPY A LINE AND WHEN ENTERING THE ELEMENT PART WHICH IS THE PAGE IN
 
           <Route path="SidebarNoHeaderNoFooterTemplate" element={<SidebarNoHeaderNoFooterTemplate />}></Route>
 
-          <Route path= "online" element={<Online />}></Route>
+          <Route path= "view" element={<View />}></Route>
+
+          <Route path= "show" element={<Show />}></Route>
 
           
 

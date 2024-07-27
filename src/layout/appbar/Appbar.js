@@ -132,12 +132,12 @@ const Appbar = () => {
                 ev.preventDefault();
               }}
             >
-              <UserAvatar text="Hi" theme="blue" />
+              <UserAvatar text="Hi" theme="" />
             </DropdownToggle>
             <DropdownMenu end className="dropdown-menu-md ms-4">
               <div className="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
                 <div className="user-card sm">
-                  <UserAvatar text="Hi" theme="blue" />
+                  <UserAvatar text="Hi" theme="" />
                   <div className="user-info">
                     <span className="lead-text">Profile Management</span>
                     <span className="sub-text">Settings and Options</span>
@@ -164,7 +164,7 @@ const Appbar = () => {
                   <LinkItem link="/user-profile-activity" icon="activity-alt">
                     Account Security
                   </LinkItem>
-                  <LinkItem link="/user-profile-activity" icon="briefcase">
+                  <LinkItem link="/view?page=/account/affiliates.php" icon="briefcase">
                     Affiliate Details
                   </LinkItem>
                   <LinkItem link="/user-profile-activity" icon="cc-alt">

@@ -5,21 +5,21 @@ const menu = [
   {
     icon: "template",
     text: "My Websites",
-    link: "/open?web=builder&page=/",
+    link: "/open?web=site&page=/",
     dashboard: true,
   },
 
   {
     icon: "cc-new",
     text: "Browse Websites",
-    link: "/online?web=cms&page=/websites/",
+    link: "/view?web=cms&page=/websites-templates/",
     dashboard: true,
   },
 
   {
     icon: "dashboard",
     text: "Billing Dashboard",
-    link: "/online?page=/account/clientarea.php",
+    link: "/view?page=/account/clientarea.php",
     badge: "Updated",
     dashboard: true,
   },
@@ -44,7 +44,7 @@ const menu = [
     icon: "sun",
     text: "Professional Services",
     active: false,
-    link: "/online?web=cms&page=/websites/website-category/professional-services/",
+    link: "/services?web=cms&page=/temp-homepage/",
     
   },
   {
@@ -168,6 +168,7 @@ const menu = [
       },
     ],
   },
+  
   {
     icon: "invest",
     text: "Manage Orders",
