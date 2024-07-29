@@ -65,22 +65,7 @@ const Header = ({ fixed, className ,style}) => {
               </ul>
             </div>
           </div>
-          <div className="nk-header-tools">
-            <ul className="nk-quick-nav">
-              <li className="chats-dropdown hide-mb-xs">
-                <ChatDropdown />
-              </li>
-              <li className="notification-dropdown me-n1">
-                <Notification />
-              </li>
-              <li className="list-apps-dropdown d-lg-none">
-                <AppDropdown />
-              </li>
-              <li className="user-dropdown"> 
-                <User />
-              </li>
-            </ul>
-          </div>
+         
         </div>
       </div>
     </div>
