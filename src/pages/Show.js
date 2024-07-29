@@ -33,7 +33,7 @@ const Show = () => {
     } else if (web) {
       setIframeSrc(`${web}`);
     } else {
-      setIframeSrc('https://mypancho.com/'); // Default URL if no parameters provided
+      setIframeSrc('https://cms.mypancho.com'); // Default URL if no parameters provided
     }
   }, [location]);
 

@@ -26,9 +26,9 @@ const View = () => {
     const page = getUrlParameter('page');
 
     if (page) {
-      setIframeSrc(`https://cms.mypancho.com/${page}`);
+      setIframeSrc(`https://cms.mypancho.com${page}`);
     } else {
-      setIframeSrc('https://mypancho.com/account/'); // Default URL if no pagelink provided
+      setIframeSrc('https://mypancho.com/account'); // Default URL if no pagelink provided
     }
   }, [location]);
 

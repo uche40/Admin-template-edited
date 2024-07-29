@@ -27,13 +27,13 @@ const Online = () => {
     const web = getUrlParameter('web');
 
     if (page && web) {
-      setIframeSrc(`https://${web}.mypancho.com/${page}`);
+      setIframeSrc(`https://${web}.mypancho.com${page}`);
     } else if (page) {
-      setIframeSrc(`https://mypancho.com/${page}`);
+      setIframeSrc(`https://mypancho.com${page}`);
     } else if (web) {
-      setIframeSrc(`https://${web}.mypancho.com/`);
+      setIframeSrc(`https://${web}.mypancho.com`);
     } else {
-      setIframeSrc('https://cms.mypancho.com/'); // Default URL if no parameters provided
+      setIframeSrc('https://cms.mypancho.com'); // Default URL if no parameters provided
     }
   }, [location]);
 

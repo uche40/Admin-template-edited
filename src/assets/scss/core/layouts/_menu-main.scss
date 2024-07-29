@@ -217,15 +217,15 @@ $menu-main-sub-toggle-icon-rtl: $ni-chevron-left !default;
         border-radius: $border-radius-sm;
         padding: 0 .4rem;
         font-size: $fx-sz-11;
-        color: $accent-500;
-        background: $accent-100;
+        color: #0199ff;
+        background: #f3f5f9;
         position: absolute;
         top: 50%;
         right: $sidebar-gap-x;
         transform: translateY(-50%);
         @if($menu_dark_option==true) {
             .is-dark & {
-                color: $accent-400;
+                color: #f3f5f9;
                 background: lighten($sidebar-bg-dark-color, 10%);
             }
         }

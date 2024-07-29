@@ -2,17 +2,25 @@ const menu = [
   {
     heading: "Quick Links",
   },
+
   {
-    icon: "template",
-    text: "My Websites",
-    link: "/open?web=site&page=/",
+    icon: "layers",
+    text: "Account Signup",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=12",
     dashboard: true,
   },
 
   {
-    icon: "cc-new",
-    text: "Browse Websites",
-    link: "/view?web=cms&page=/websites-templates/",
+    icon: "lock-alt",
+    text: "Account Signin",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=10",
+    dashboard: true,
+  },
+
+  {
+    icon: "template",
+    text: "Website Templates",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=1",
     dashboard: true,
   },
 
@@ -25,49 +33,42 @@ const menu = [
   },
   {
     icon: "account-setting",
-    text: "Book Expert Consultation",
-    link: "/view?page=/account/register.php",
+    text: "Professional Services",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=13",
     dashboard: true,
   },
 
 
   {
-    heading: "Prebuilt Websites ",
+    heading: "Website Templates ",
   },
   {
-    icon: "reports-alt",
-    text: "All Websites",
-    link: "/invest",
-    link: "/web?page=/websites/",
+    icon: "umbrela",
+    text: "All Website Templates",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=1",
   },
+  
   {
-    icon: "sun",
-    text: "Professional Services",
+    icon: "clock",
+    text: "Retail & Hospitality",
     active: false,
-    link: "/services?web=cms&page=/temp-homepage/",
+    badge: "New",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=6",
+    
+  },
+  {
+    icon: "monitor",
+    text: "Home & Lifestyle",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=3",
+    active: false,
     
   },
   {
     icon: "color-palette",
-    text: "Retail & Hospitality",
-    active: false,
-    badge: "New",
-    link: "/web?page=/websites/website-category/retail-hospitality/",
-    
-  },
-  {
-    icon: "play-circle",
-    text: "Home & Lifestyle",
-    link: "/web?page=/websites/website-category/home-lifestyle/",
-    active: false,
-    
-  },
-  {
-    icon: "clock",
     text: "Creative & Digital",
     active: false,
     badge: "Trending",
-    link: "/web?page=/websites/website-category/creative-digital/",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=8",
     
   },
   {
@@ -88,7 +89,7 @@ const menu = [
         theme: "bg-orange-dim",
       },
       {
-        text: "Manage My Products",
+        text: "My Services",
         link: "/view?page=/account/clientarea.php?action=services",
         icon: "swap-alt",
         theme: "bg-primary-dim",
@@ -101,7 +102,7 @@ const menu = [
       },
       {
         text: "Contacts and Users", 
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/account/users",
         icon: "user-list",
         theme: "bg-info-dim",
       },
@@ -109,41 +110,41 @@ const menu = [
     ],
   },
   {
-    icon: "code",
+    icon: "spark",
     text: "Specialized Industries",
     active: false,
-    link: "/web?page=/websites/website-category/specialized-industries/",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=7",
     
   },
 
   {
-    icon: "wallet-saving",
+    icon: "network",
     text: "Online Business Models",
     active: false,
-    link: "/web?page=/websites/website-category/online-business-models/",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=4",
     
   },
   
-  
-  
+   
   {
     heading: "Manage Account",
   },
   {
     icon: "user-alt",
-    text: "Account Dashboard",
-    link: "/view?page=/account/clientarea.php?action=services",
+    text: "Billing Dashboard",
+    link: "/view?page=/account/clientarea.php",
     active: false,
     
   },
   {
     icon: "wallet-saving",
     text: "Manage Billing",
+    link: "/view?page=/account/clientarea.php",
     active: false,
     subMenu: [
       {
         text: "My Invoices",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/clientarea.php?action=invoices",
         
       },
       {
@@ -153,17 +154,17 @@ const menu = [
       },
       {
         text: "My Quotes",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/clientarea.php?action=quotes",
         
       },
       {
         text: "Mass Payment",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/clientarea.php?action=masspay&all=true",
         
       },
       {
         text: "Add Funds",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/clientarea.php?action=addfunds",
         
       },
     ],
@@ -172,53 +173,50 @@ const menu = [
   {
     icon: "invest",
     text: "Manage Orders",
+    link: "/view?page=/account/clientarea.php?action=services",
+    badge: "Purchases",
     active: false,
     
   },
   {
     icon: "briefcase",
     text: "Affiliate Partners",
+    link: "/view?page=/account/affiliates.php",
     active: false,
     subMenu: [
       {
         text: "Partner Dashboard",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/affiliates.php",
       },
       {
         text: "My Commissions",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/index.php?m=AffiliatesPlus&hcommissions=1",
       },
       {
         text: "My Payouts",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/index.php?m=AffiliatesPlus",
       },
       {
         text: "Link Generator",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/index.php?m=AffiliatesPlus&a=links",
       },
-      {
-        text: "How it Works",
-        link: "/view?page=/account/clientarea.php?action=services",
-      },
-      {
-        text: "Client Area",
-        link: "/view?page=/account/clientarea.php?action=services",
-      },
+     
 
     ],
   },
   {
     icon: "user-list-fill",
     text: "Contacts and Users",
+    link: "/view?page=/account/account/users",
     active: false,
     subMenu: [
       {
         text: "Manage Users",
-        link: "/view?page=/account/clientarea.php?action=services",
+        link: "/view?page=/account/account/users",
       },
       {
         text: "Manage Contacts",
-        link: "/nioicon",
+        link: "/view?page=/account/account/contacts",
       },
       
     ],
@@ -229,14 +227,14 @@ const menu = [
   {
     icon: "question",
     text: "Open Support Ticket",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/submitticket.php",
     active: false,
     
   },
   {
     icon: "inbox-in",
     text: "My Support Tickets",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/supporttickets.php",
     active: false,
     
   },
@@ -244,47 +242,47 @@ const menu = [
   {
     icon: "play-circle",
     text: "Video Tutorials",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=11",
     active: false,
     
   },
   {
     icon: "info",
     text: "Knowledgebase",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/knowledgebase",
     active: false,
     
   },
   {
     icon: "calendar-alt",
     text: "Announcements",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/announcements",
     active: false,
     
   },
   {
     icon: "live",
     text: "Network Status",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/serverstatus",
     active: false,
     
   },
   {
     icon: "file-docs",
     text: "Terms of Service",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/pancho_terms-of-service.php",
     
   },
   {
     icon: "eye",
     text: "Privacy Policy",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/pancho_privacy-policy.php",
     
   },
   {
     icon: "focus",
     text: "Cookie Policy",
-    link: "/view?page=/account/clientarea.php?action=services",
+    link: "/view?page=/account/pancho_cookie-policy.php",
     active: "false",
   },
   

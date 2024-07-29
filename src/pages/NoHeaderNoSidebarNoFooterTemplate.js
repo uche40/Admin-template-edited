@@ -20,7 +20,7 @@ const NoHeaderNoSidebarNoFooterTemplate = () => {
     const page = getUrlParameter('page');
 
     if (page) {
-      setIframeSrc(`https://mypancho.com/${page}`);
+      setIframeSrc(`https://mypancho.com${page}`);
     } else {
       setIframeSrc('https://mypancho.com/cms'); // Default URL if no page provided
     }
