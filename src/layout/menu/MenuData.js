@@ -26,7 +26,7 @@ const menu = [
 
   {
     icon: "dashboard",
-    text: "Billing Dashboard",
+    text: "Client Dashboard",
     link: "/view?page=/account/clientarea.php",
     badge: "Updated",
     dashboard: true,
@@ -77,7 +77,7 @@ const menu = [
     active: false,
     subMenu: [
       {
-        text: "Account Dashboard",
+        text: "Client Dashboard",
         link: "/view?page=/account/clientarea.php",
         icon: "meter",
         theme: "bg-purple-dim",
@@ -131,7 +131,7 @@ const menu = [
   },
   {
     icon: "user-alt",
-    text: "Billing Dashboard",
+    text: "Client Dashboard",
     link: "/view?page=/account/clientarea.php",
     active: false,
     
@@ -235,6 +235,14 @@ const menu = [
     icon: "inbox-in",
     text: "My Support Tickets",
     link: "/view?page=/account/supporttickets.php",
+    active: false,
+    
+  },
+
+  {
+    icon: "live",
+    text: "Live Support",
+    link: "/show?page=/account/pancho-website-page-redirect.php?page=14",
     active: false,
     
   },
