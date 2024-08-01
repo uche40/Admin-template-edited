@@ -25,7 +25,7 @@ const Open = () => {
     } else if (page) {
       setIframeSrc(`https://mypancho.com${page}`);
     } else if (web) {
-      setIframeSrc(`https://${web}.mypancho.com`);
+      setIframeSrc(`https://mypancho.com${web}`);
     } else {
       setIframeSrc('https://cms.mypancho.com'); // Default URL if no parameters provided
     }

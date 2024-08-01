@@ -156,7 +156,7 @@ const Appbar = () => {
                 <div className="dropdown-inner">
                   <LinkList>
                   <LinkItem link="/view?page=/account/login" icon="meter" >
-                      Account Sign In
+                      Client Dashboard
                     </LinkItem>
                     <LinkItem link="/view?page=/account/user/profiles" icon="user-alt">
                       View Profile

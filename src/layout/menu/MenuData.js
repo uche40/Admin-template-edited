@@ -19,18 +19,26 @@ const menu = [
 
   {
     icon: "template",
-    text: "Website Templates",
+    text: "Business Websites",
     link: "/view?page=/account/pancho-website-page-redirect.php?page=1",
     dashboard: true,
   },
 
   {
-    icon: "dashboard",
-    text: "Client Dashboard",
-    link: "/view?page=/account/clientarea.php",
+    icon: "link",
+    text: "Domain Names",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=15",
+    dashboard: true,
+  },
+
+  {
+    icon: "emails",
+    text: "Business Emails",
+    link: "/view?page=/account/pancho-website-page-redirect.php?page=16",
     badge: "Updated",
     dashboard: true,
   },
+
   {
     icon: "account-setting",
     text: "Professional Services",
@@ -242,7 +250,7 @@ const menu = [
   {
     icon: "live",
     text: "Live Support",
-    link: "/show?web=/account/pancho-website-page-redirect.php?page=14",
+    link: "/open?web=/account/pancho-website-page-redirect.php?page=14",
     active: false,
     
   },
