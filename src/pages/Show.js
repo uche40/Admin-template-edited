@@ -27,11 +27,11 @@ const Show = () => {
     const web = getUrlParameter('web');
 
     if (page && web) {
-      setIframeSrc(`${web}`);
+      setIframeSrc(`https://${web}.mypancho.com${page}`);
     } else if (page) {
-      setIframeSrc(`${web}`);
+      setIframeSrc(`https://mypancho.com${page}`);
     } else if (web) {
-      setIframeSrc(`${web}`);
+      setIframeSrc(`https://mypancho.com/${web}`);
     } else {
       setIframeSrc('https://cms.mypancho.com'); // Default URL if no parameters provided
     }

@@ -242,7 +242,7 @@ const menu = [
   {
     icon: "live",
     text: "Live Support",
-    link: "/show?page=/account/pancho-website-page-redirect.php?page=14",
+    link: "/show?web=/account/pancho-website-page-redirect.php?page=14",
     active: false,
     
   },
