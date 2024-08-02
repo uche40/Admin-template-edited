@@ -191,26 +191,6 @@ const menu = [
     text: "Affiliate Partners",
     link: "/view?page=/account/affiliates.php",
     active: false,
-    subMenu: [
-      {
-        text: "Partner Dashboard",
-        link: "/view?page=/account/affiliates.php",
-      },
-      {
-        text: "My Commissions",
-        link: "/view?page=/account/index.php?m=AffiliatesPlus&hcommissions=1",
-      },
-      {
-        text: "My Payouts",
-        link: "/view?page=/account/index.php?m=AffiliatesPlus",
-      },
-      {
-        text: "Link Generator",
-        link: "/view?page=/account/index.php?m=AffiliatesPlus&a=links",
-      },
-     
-
-    ],
   },
   {
     icon: "user-list-fill",
